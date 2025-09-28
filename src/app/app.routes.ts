@@ -7,16 +7,18 @@ import { MacroTemplateComponent } from './blogs/macros/macro-template/macro-temp
 import { LayoutComponent } from './layout/layout.component';
 
 export const routes: Routes = [
-    {
+  {
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: HomeComponent },                
-      { path: 'micros/:id', component: MicroTemplateComponent }, 
-      { path: 'macros/:id', component: MacroTemplateComponent }, 
+      { path: '', component: HomeComponent },
+      // { path: 'micros/:id', component: MicroTemplateComponent },
+      // { path: 'macros/:id', component: MacroTemplateComponent },
+      { path: 'micros', component: MicroTemplateComponent },
+      { path: 'macros', component: MacroTemplateComponent },
       { path: 'imprint', component: ImprintComponent },
       { path: 'privacy-policy', component: PrivacyPolicyComponent },
-      { path: '**', redirectTo: '' }
-    ]
-  }
+      { path: '**', redirectTo: '' },
+    ],
+  },
 ];
