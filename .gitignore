@@ -68,3 +68,6 @@ playwright-report/
 test-results/
 blob-report/
 
+src/environments/**/*.ts
+!src/environments/environment.example.ts
+
