@@ -40,3 +40,31 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Env/Secrets (falls verwendet)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Firebase (lokal / Emulator / Functions)
+.firebase/
+firebase-debug.log
+functions/node_modules/
+functions/lib/
+functions/.runtimeconfig.json
+
+# Lint-/Build-Caches
+.eslintcache
+.stylelintcache
+
+# Logs (alle Paketmanager)
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# E2E/Tools (falls genutzt)
+playwright-report/
+test-results/
+blob-report/
+
