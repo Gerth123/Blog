@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { map, filter, switchMap } from 'rxjs/operators';
 import { toSignal } from '@angular/core/rxjs-interop';
 
-import { NutritionService, Micro } from '../../../shared/services/nutrition-service/nutrition-service';
+import { NutritionService } from '../../../shared/services/nutrition-service/nutrition-service';
+import { Micro } from '../../../shared/models/micro/micro.model';
 
 @Component({
   selector: 'app-micro-template',

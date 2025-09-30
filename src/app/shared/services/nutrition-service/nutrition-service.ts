@@ -5,28 +5,8 @@ import {
 } from '@angular/fire/firestore';
 import { Observable, shareReplay } from 'rxjs';
 
-export interface Micro {
-  id: string;
-  name: string;
-  symbol?: string;         
-  category?: string;       
-  unit?: string;           
-  desc?: string;
-  notes?: string;
-  functions?: string[];
-  sources?: string[];
-  rda?: { female?: number; male?: number; pregnant?: number; unit?: string };
-  supply?: { de?: 'niedrig' | 'mittel' | 'gut' };
-  riskGroups?: string[];
-}
-
-export interface Macro {
-  id: string;
-  name: string;
-  unit?: string;
-  desc?: string;
-  sources?: string[];
-}
+import { Macro } from '../../models/macro/macro.model';
+import { Micro } from '../../models/micro/micro.model';
 
 @Injectable({ providedIn: 'root' })
 export class NutritionService {
