@@ -3,5 +3,7 @@ export interface Macro {
   name: string;
   unit?: string;
   desc?: string;
+  kcalPerGram?: number;
+  notes?: string;
   sources?: string[];
 }

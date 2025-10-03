@@ -10,7 +10,15 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Elektrolyt, u. a. wichtig für Blutdruck und Nerven-/Muskel-Funktion.',
     rda: { male: 4000, female: 4000, pregnant: 4000, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Kalium)'],
+    sources: [
+      'Bananen, Orangen',
+      'Kartoffeln, Süßkartoffeln',
+      'Spinat, Tomaten',
+      'Avocado',
+      'Hülsenfrüchte (Linsen, Bohnen)',
+      'Nüsse (z. B. Pistazien)',
+      'Trockenfrüchte (Aprikosen)'
+    ],
   },
   {
     id: 'kalzium',
@@ -20,7 +28,14 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Knochen/Zähne, Signalübertragung, Muskelkontraktion.',
     rda: { male: 1000, female: 1000, pregnant: 1200, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Kalzium)'],
+    sources: [
+      'Milch, Joghurt, Käse',
+      'Angereicherte Pflanzendrinks (z. B. Soja)',
+      'Grünkohl, Brokkoli',
+      'Mandeln, Sesam/Tahini',
+      'Tofu (mit Calcium-Sulfat)',
+      'Calciumreiches Mineralwasser'
+    ],
   },
   {
     id: 'magnesium',
@@ -30,7 +45,14 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Kofaktor für viele Enzyme, Muskel- & Nervenfunktion.',
     rda: { male: 350, female: 300, pregnant: 300, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Magnesium)'],
+    sources: [
+      'Nüsse (Mandeln, Cashews)',
+      'Samen/Kerne (Kürbis-, Sonnenblumenkerne)',
+      'Vollkorngetreide, Haferflocken',
+      'Hülsenfrüchte (Linsen, Bohnen)',
+      'Kakao/Dunkle Schokolade',
+      'Spinat'
+    ],
   },
   {
     id: 'natrium',
@@ -40,7 +62,13 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Elektrolyt/Flüssigkeitshaushalt; Hinweis: Salzzufuhr begrenzen.',
     rda: { male: 1500, female: 1500, pregnant: 1500, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Natrium)'],
+    sources: [
+      'Speisesalz, jodiertes Salz',
+      'Brot/Backwaren',
+      'Käse, Wurstwaren',
+      'Fertiggerichte, Snacks',
+      'Sojasauce und andere Saucen'
+    ],
   },
   {
     id: 'phosphor',
@@ -50,7 +78,14 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Enzymaktivierung, Säure-Basen-Haushalt, Knochen/Zähne.',
     rda: { male: 550, female: 550, pregnant: 550, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Phosphor)'],
+    sources: [
+      'Fleisch, Geflügel',
+      'Fisch',
+      'Milchprodukte',
+      'Eier',
+      'Hülsenfrüchte',
+      'Vollkorngetreide, Nüsse'
+    ],
   },
   {
     id: 'chlorid',
@@ -60,7 +95,12 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Wichtiges Anion im Elektrolythaushalt.',
     notes: 'Im Skript nur als Mengenelement aufgeführt; keine RDA-Seite.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Speisesalz (Natriumchlorid)',
+      'Verarbeitete Lebensmittel',
+      'Käse, Wurstwaren',
+      'Oliven, eingelegtes Gemüse'
+    ],
   },
   {
     id: 'schwefel',
@@ -70,7 +110,13 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Bestandteil schwefelhaltiger Aminosäuren.',
     notes: 'Im Skript nur in der Übersicht; keine RDA-Seite.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Eier',
+      'Fleisch, Fisch',
+      'Hülsenfrüchte',
+      'Kreuzblütler (Brokkoli, Kohl)',
+      'Zwiebelgewächse (Knoblauch, Zwiebeln)'
+    ],
   },
 
   // ======= Mineralstoffe – Spurenelemente =======
@@ -83,7 +129,15 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Sauerstofftransport (Hämoglobin/Myoglobin).',
     notes:
       'RDA-Seite vorhanden, Zahlen im Skript als Tabelle/Grafik – für DB hier bewusst offen gelassen.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Eisen)'],
+    sources: [
+      'Rotes Fleisch, Leber',
+      'Geflügel',
+      'Fisch/Meeresfrüchte',
+      'Hülsenfrüchte (Linsen, Bohnen)',
+      'Tofu/Tempeh',
+      'Vollkorn, Haferflocken',
+      'Kürbiskerne, Sesam'
+    ],
   },
   {
     id: 'fluorid',
@@ -93,7 +147,12 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Zahnmineralisation/Kariesprophylaxe.',
     rda: { male: 3.5, female: 3.0, pregnant: 3.0, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Fluorid)'],
+    sources: [
+      'Fluoridiertes Speisesalz',
+      'Tee (Schwarz-/Grüntee)',
+      'Fisch, Meeresfrüchte',
+      'Mineralwasser mit Fluorid'
+    ],
   },
   {
     id: 'jod',
@@ -104,7 +163,12 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Schilddrüsenhormone, Stoffwechsel.',
     rda: { male: 200, female: 200, pregnant: 230, unit: 'µg' },
     notes: 'Erwachsene: 180–200 µg/Tag – im Skript als Spanne.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Jod)'],
+    sources: [
+      'Jodiertes Speisesalz',
+      'Seefisch (Kabeljau, Seelachs)',
+      'Meeresalgen (z. B. Nori – in Maßen)',
+      'Milchprodukte, Eier'
+    ],
   },
   {
     id: 'selen',
@@ -114,7 +178,12 @@ export const MICROS_SEED: Micro[] = [
     unit: 'µg',
     desc: 'Antioxidans, Schilddrüsenhormon-Aktivierung, Immunfunktion.',
     rda: { male: 70, female: 60, pregnant: 60, unit: 'µg' },
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Selen)'],
+    sources: [
+      'Paranüsse (sehr reich)',
+      'Fisch (Thunfisch), Meeresfrüchte',
+      'Fleisch, Eier',
+      'Vollkorngetreide'
+    ],
   },
   {
     id: 'zink',
@@ -125,7 +194,14 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Immunfunktion, Proteinsynthese, Wundheilung.',
     notes:
       'RDA im Skript als Spanne wegen Phytatgehalt: Männer 11–16 mg, Frauen 7–10 mg, Schwangere 7–13 mg.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Guide (Zink)'],
+    sources: [
+      'Rind-/Schweinefleisch, Geflügel',
+      'Käse',
+      'Meeresfrüchte (z. B. Austern)',
+      'Vollkorngetreide',
+      'Hülsenfrüchte',
+      'Nüsse & Samen (Kürbis-, Sesam)'
+    ],
   },
   // (weitere Spurenelemente aus der Übersicht ohne Detailseite:)
   {
@@ -134,7 +210,12 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Cr',
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Vollkornprodukte',
+      'Fleisch',
+      'Brokkoli',
+      'Gewürze (z. B. Pfeffer)'
+    ],
   },
   {
     id: 'kobalt',
@@ -142,7 +223,11 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Co',
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Innereien (Leber)',
+      'Schalentiere',
+      'Milchprodukte, Eier'
+    ],
   },
   {
     id: 'kupfer',
@@ -150,7 +235,13 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Cu',
     category: 'Mineralstoff · Spurenelement',
     unit: 'mg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Leber',
+      'Schalentiere',
+      'Nüsse (Cashews)',
+      'Samen (Sesam)',
+      'Kakao, Vollkorn'
+    ],
   },
   {
     id: 'mangan',
@@ -158,7 +249,13 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Mn',
     category: 'Mineralstoff · Spurenelement',
     unit: 'mg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Vollkorngetreide',
+      'Nüsse',
+      'Tee',
+      'Hülsenfrüchte',
+      'Spinat'
+    ],
   },
   {
     id: 'molybdaen',
@@ -166,7 +263,11 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Mo',
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Hülsenfrüchte',
+      'Getreide',
+      'Nüsse'
+    ],
   },
   {
     id: 'nickel',
@@ -174,7 +275,12 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Ni',
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Nüsse',
+      'Schokolade/Kakao',
+      'Hülsenfrüchte',
+      'Vollkornprodukte'
+    ],
   },
   {
     id: 'silizium',
@@ -182,7 +288,12 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Si',
     category: 'Mineralstoff · Spurenelement',
     unit: 'mg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Hafer, Gerste (Vollkorn)',
+      'Kartoffeln',
+      'Bananen',
+      'Siliciumreiches Mineralwasser'
+    ],
   },
   {
     id: 'vanadium',
@@ -190,7 +301,12 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'V',
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Pilze',
+      'Schalentiere',
+      'Getreide',
+      'Gewürze (z. B. Dill, Pfeffer)'
+    ],
   },
   {
     id: 'zinn',
@@ -198,7 +314,11 @@ export const MICROS_SEED: Micro[] = [
     symbol: 'Sn',
     category: 'Mineralstoff · Spurenelement',
     unit: 'mg',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Meeresfrüchte',
+      'Getreideprodukte',
+      'Konservenlebensmittel (Kontakt mit Zinnbeschichtung)'
+    ],
   },
   {
     id: 'arsen',
@@ -207,7 +327,10 @@ export const MICROS_SEED: Micro[] = [
     category: 'Mineralstoff · Spurenelement',
     unit: 'µg',
     notes: 'In der Übersicht geführt, ernährungsphysiologisch umstritten.',
-    sources: ['OTL Skript 3.3, Mineralstoff-Übersicht'],
+    sources: [
+      'Reis/Reisprodukte (anorganisches Arsen)',
+      'Meeresfrüchte (organische Arsenverbindungen)'
+    ],
   },
 
   // ======= Vitamine – wasserlöslich =======
@@ -219,7 +342,12 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Coenzym im Energiestoffwechsel; Nervensystem.',
     rda: { male: 1.2, female: 1.0, pregnant: 1.3, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Thiamin)'],
+    sources: [
+      'Vollkorngetreide, Haferflocken',
+      'Schweinefleisch',
+      'Hülsenfrüchte',
+      'Samen & Nüsse'
+    ],
   },
   {
     id: 'vitamin-b2',
@@ -229,7 +357,13 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Bestandteil von Coenzymen; antioxidativ.',
     rda: { male: 1.4, female: 1.1, pregnant: 1.4, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Riboflavin)'],
+    sources: [
+      'Milch, Joghurt, Käse',
+      'Eier',
+      'Innereien (Leber)',
+      'Mandeln',
+      'Pilze'
+    ],
   },
   {
     id: 'niacin',
@@ -238,7 +372,12 @@ export const MICROS_SEED: Micro[] = [
     category: 'Vitamin · wasserlöslich',
     unit: 'mg',
     notes: 'Im Skript aufgeführt; eigene Detailseite nicht vorhanden.',
-    sources: ['OTL Skript 3.3, Vitamin-Übersicht'],
+    sources: [
+      'Geflügel, Rind',
+      'Fisch (Thunfisch, Lachs)',
+      'Erdnüsse',
+      'Vollkorngetreide'
+    ],
   },
   {
     id: 'pantothensaeure',
@@ -247,7 +386,13 @@ export const MICROS_SEED: Micro[] = [
     category: 'Vitamin · wasserlöslich',
     unit: 'mg',
     notes: 'Im Skript aufgeführt; eigene Detailseite nicht vorhanden.',
-    sources: ['OTL Skript 3.3, Vitamin-Übersicht'],
+    sources: [
+      'Fleisch, Geflügel',
+      'Eier',
+      'Vollkorngetreide',
+      'Avocado',
+      'Pilze'
+    ],
   },
   {
     id: 'vitamin-b6',
@@ -256,7 +401,13 @@ export const MICROS_SEED: Micro[] = [
     category: 'Vitamin · wasserlöslich',
     unit: 'mg',
     notes: 'Im Skript aufgeführt; eigene Detailseite nicht vorhanden.',
-    sources: ['OTL Skript 3.3, Vitamin-Übersicht'],
+    sources: [
+      'Geflügel, Fisch',
+      'Kartoffeln',
+      'Bananen',
+      'Kichererbsen',
+      'Vollkorngetreide'
+    ],
   },
   {
     id: 'biotin',
@@ -265,7 +416,13 @@ export const MICROS_SEED: Micro[] = [
     category: 'Vitamin · wasserlöslich',
     unit: 'µg',
     notes: 'Im Skript aufgeführt; eigene Detailseite nicht vorhanden.',
-    sources: ['OTL Skript 3.3, Vitamin-Übersicht'],
+    sources: [
+      'Eier (Eigelb)',
+      'Leber',
+      'Nüsse & Samen',
+      'Lachs',
+      'Vollkornprodukte'
+    ],
   },
   {
     id: 'folat',
@@ -276,7 +433,13 @@ export const MICROS_SEED: Micro[] = [
     desc: 'DNA/RNA-Bildung, Zellteilung, Hämoglobinsynthese.',
     rda: { male: 300, female: 300, pregnant: 550, unit: 'µg' },
     notes: 'Angabe als Folat-Äquivalent im Skript.',
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Folat)'],
+    sources: [
+      'Grünes Blattgemüse (Spinat, Feldsalat)',
+      'Hülsenfrüchte (Linsen, Bohnen)',
+      'Spargel',
+      'Zitrusfrüchte',
+      'Vollkorngetreide'
+    ],
   },
   {
     id: 'vitamin-b12',
@@ -286,7 +449,12 @@ export const MICROS_SEED: Micro[] = [
     unit: 'µg',
     desc: 'Blutbildung, Nervenfunktion, Eiweißstoffwechsel.',
     rda: { male: 4, female: 4, pregnant: 4.5, unit: 'µg' },
-    sources: ['OTL Skript 3.3, Vitamin-Guide (B12)'],
+    sources: [
+      'Fisch, Fleisch',
+      'Milchprodukte',
+      'Eier',
+      'Angereicherte pflanzliche Produkte (z. B. Drinks)'
+    ],
   },
   {
     id: 'vitamin-c',
@@ -296,7 +464,14 @@ export const MICROS_SEED: Micro[] = [
     unit: 'mg',
     desc: 'Antioxidans, Immunsystem, viele Stoffwechselfunktionen.',
     rda: { male: 110, female: 95, pregnant: 105, unit: 'mg' },
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Vitamin C)'],
+    sources: [
+      'Zitrusfrüchte',
+      'Paprika',
+      'Brokkoli',
+      'Erdbeeren',
+      'Kiwi',
+      'Schwarze Johannisbeeren'
+    ],
   },
 
   // ======= Vitamine – fettlöslich =======
@@ -309,7 +484,12 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Sehvorgang, Haut/Schleimhäute, Antioxidans.',
     rda: { male: 850, female: 700, pregnant: 800, unit: 'µg' },
     notes: 'Skript nennt 800–850 µg (m); 1 µg Retinol = 6 µg Beta-Carotin.',
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Vitamin A)'],
+    sources: [
+      'Leber, Lebertran',
+      'Eier, Milchprodukte',
+      'Karotten, Süßkartoffeln (β-Carotin)',
+      'Grünkohl, Spinat (β-Carotin)'
+    ],
   },
   {
     id: 'vitamin-d',
@@ -320,7 +500,12 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Hormonähnlich: Kalziumhomöostase, Knochen, Immunfunktion.',
     rda: { male: 800, female: 800, pregnant: 4000, unit: 'IE' },
     notes: 'Skript: DGE 800 IE; oft 2000–4000 IE als Zufuhrbereich.',
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Vitamin D)'],
+    sources: [
+      'Fettreicher Fisch (Lachs, Hering, Makrele)',
+      'Eier (Eigelb)',
+      'Pilze (UV-behandelt)',
+      'Angereicherte Lebensmittel (z. B. Margarine, Pflanzendrinks)'
+    ],
   },
   {
     id: 'vitamin-e',
@@ -331,7 +516,12 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Antioxidans, Zellstoffwechsel.',
     rda: { male: 14, female: 11.5, pregnant: 13, unit: 'mg' },
     notes: 'Skript gibt Spannen: Männer 12–15 mg; Frauen 11–12 mg.',
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Vitamin E)'],
+    sources: [
+      'Pflanzenöle (Sonnenblumen-, Weizenkeim-, Rapsöl)',
+      'Mandeln, Haselnüsse',
+      'Samen (Sonnenblumenkerne)',
+      'Avocado'
+    ],
   },
   {
     id: 'vitamin-k',
@@ -342,6 +532,11 @@ export const MICROS_SEED: Micro[] = [
     desc: 'Blutgerinnung, Knochenstoffwechsel, Proteinbildung.',
     rda: { male: 75, female: 62.5, pregnant: 60, unit: 'µg' },
     notes: 'Skript-Spannen: Männer 70–80 µg; Frauen 60–65 µg.',
-    sources: ['OTL Skript 3.3, Vitamin-Guide (Vitamin K)'],
+    sources: [
+      'Grünes Blattgemüse (Grünkohl, Spinat) – Vitamin K1',
+      'Kräuter (Petersilie)',
+      'Fermentierte Lebensmittel (Natto, einige Käsesorten) – Vitamin K2',
+      'Brokkoli'
+    ],
   },
 ];
